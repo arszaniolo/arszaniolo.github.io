@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	<title>ARS</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body> <!-- Sitede gözükecek alan -->
+
+	<div id="baslik" >
+
+		<img src="resimler/logo.png">
+
+	</div>
+
+	<div id="benkimim" > 
+
+		<h1> Ben Kimim ?</h1>
+
+		<p>
+			Ben Ares Çotuk. 11 yaşındayım. Fanatik Galatasaraylı ve bir Madridistayım (Real Madrid Taraftarı). Nerdeyse her Pazar antrenman yaparım. EN BÜYÜK GALATASARAY!!!!!!!! İlerde futbolcu olmak istiyorum.
+		</p>
+
+	</div>
+<div id="slider">	
+
+<!-- Slideshow container -->
+<div class="slideshow-container">
+
+  <!-- Full-width images with number and caption text -->
+  <div class="mySlides fade">
+    <div class="numbertext">1 / 6</div>
+    <img src="resimler/img1.jpg" style="width:100%">
+    <div class="text">EN</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">2 / 6</div>
+    <img src="resimler/img2.jpg" style="width:100%">
+    <div class="text">Büyük</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">3 / 6</div>
+    <img src="resimler/img3.jpg" style="width:100%">
+    <div class="text">GALATASARAY</div>
+  </div>
+
+  <div class="mySlides fade">
+  	<div class="numbertext">4 / 6</div>
+  	<img src="resimler/img4.jpg" style="width:100%">
+  	<div class="text">TÜRKİYEEE</div>
+  </div>
+
+  <div class="mySlides fade">
+  	<div class="numbertext">5 / 6</div>
+  	<img src="resimler/img5.jpg" style="width:100%">
+  	<div class="text">TÜRKİYEEE v2</div>
+  </div>
+
+   <div class="mySlides fade">
+  	<div class="numbertext">6 / 6</div>
+  	<img src="resimler/img6.jpg" style="width:100%">
+  	<div class="text">KEREM POTTER</div>
+  </div>
+   <!-- Next and previous buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+<!-- The dots/circles -->
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+  <span class="dot" onclick="currentSlide(4)"></span>
+  <span class="dot" onclick="currentSlide(5)"></span>
+  <span class="dot" onclick="currentSlide(6)"></span>
+
+</div>
+</div>
+	<div id="egitimler" >
+		
+		<div class="duzenleme" >
+		
+			<div id="resim"> 
+
+			<img src="resimler/egitimresmi.png">
+
+			</div>
+			
+			<div id="yazi"> 
+
+					<h2> ilgi alanlarım</h2>
+
+					<ul>
+						<li>Futbol Oynamak</li>
+						<li>Maç İzlemek</li>
+						<li>Oyun Oynamak</li>
+						<li>FIFA'da regen ya da rebuild yapmak</li>
+						<li>Uyumak</li>
+						<li>Kodlamak</li>
+						<li>XBOX Oynamak</li>
+					</ul>
+
+			</div>
+
+		<div class="temizle" ></div>
+
+	</div>
+	</div>
+
+	<div id="logo">
+
+		<div class="duzenleme">
+
+			<h2>Sevdiğim Takımlar / Oyuncular</h2>
+
+			<div class="logokutusu">
+				<img src="resimler/resim1.png">
+			</div>
+			<div class="logokutusu">
+				<img src="resimler/resim2.png">
+			</div>
+			<div class="logokutusu">
+				<img src="resimler/resim3.png">
+			</div>
+			<div class="logokutusu">
+				<img src="resimler/resim4.png">
+			</div>
+
+			<div class="temizle"></div>
+
+		</div>
+
+	</div>
+
+	<div id="iletisim"> 
+
+		<h2>İletişim</h2> 
+		<p class="telefon" >+90 505 912 91 22</p>
+		<p>ares.cotuk@gmail.com</p>
+		<p><a href="https://www.galatasaray.org/anasayfa">www.enbuyuk.com.tr</a></p>
+		<p><a href="https://www.realmadrid.com/en-US">
+		www.real.com</a></p>
+		<p><a href="https://www.mancity.com/">www.manchestercity.com</a></p>
+		<p><a href="https://www.manutd.com/">www.manchesterunited.com</a></p>
+		<p><a href="https://www.liverpool.com/">www.liverpoolfc.com</a></p>
+		<p><a href="https://www.fcbarcelona.com/en/">www.fcbarcelona.com</a></p>	
+		<hr>	
+
+		<p>Copyright © 2024 Ares Çotuk - Tüm Hakları Saklıdır.</p>
+
+	</div>
+
+<script>
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
+</body>
+
+</html>
